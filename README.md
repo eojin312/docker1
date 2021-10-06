@@ -18,9 +18,10 @@ container
 
 ## docker GUI 다운
 
+[https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 
 
-terminal 에 docker 다운
+## terminal 에 docker 다운
 
 ```
 sudo wget -qO- https://get.docker.com/ | sh
