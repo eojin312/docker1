@@ -87,13 +87,13 @@ image 는 생성됨!
 
 GUI 에 있으니 확인해봐도 좋고,
 
+![2](https://user-images.githubusercontent.com/45488643/136145016-b420aec3-db43-468a-b3cf-61486836b68b.png)
+
 terminal 에서도 확인이 가능함
 
 ```
  docker images
 ```
-
-![2](https://user-images.githubusercontent.com/45488643/136145016-b420aec3-db43-468a-b3cf-61486836b68b.png)
 
 이제 백그라운드에서 실행 시켜봄
 
