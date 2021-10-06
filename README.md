@@ -95,6 +95,8 @@ terminal 에서도 확인이 가능함
  docker images
 ```
 
+![3](https://user-images.githubusercontent.com/45488643/136145035-79f6058c-0ee0-4d19-8e05-3003a51ee4b8.png)
+
 이제 백그라운드에서 실행 시켜봄
 
 ```
@@ -112,7 +114,8 @@ docker run -d -p 8080:9999 docker-test
 
 
 **예시 결과**
-![3](https://user-images.githubusercontent.com/45488643/136145035-79f6058c-0ee0-4d19-8e05-3003a51ee4b8.png)
+
+![4](https://user-images.githubusercontent.com/45488643/136145049-805dcbf0-ec7f-46f7-83ab-83bdae8e426a.png)
 
 ## 실행된 백그라운드 접속하기
 
@@ -122,7 +125,7 @@ terminal 에서 해야함
 docker exec -it [containerID] bash 
 ```
 
-![4](https://user-images.githubusercontent.com/45488643/136145049-805dcbf0-ec7f-46f7-83ab-83bdae8e426a.png)
+
 
 그럼 변경된 걸 확인할 수 있음
 
