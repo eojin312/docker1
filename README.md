@@ -73,34 +73,53 @@ docker build [프로젝트 경로]/Dockerfile
 
 안된다 싶으면,
 
+![1](https://user-images.githubusercontent.com/45488643/136144994-15febe8f-0174-465e-8792-3b744499e229.png)
+
 꼼수지만, 이렇게 하면 알아서 intellij 가 image + container 까지 생성, build 해줌..
 
-image 는 생성됨.
+image 는 생성됨!
 
-생성된 image 는 어떻게 확인하나요?
+## 생성된 image 는 어떻게 확인하나요?
 
 GUI 에 있으니 확인해봐도 좋고,
 
 terminal 에서도 확인이 가능함
 
-docker images
+```
+ docker images
+```
+
+![2](https://user-images.githubusercontent.com/45488643/136145016-b420aec3-db43-468a-b3cf-61486836b68b.png)
 
 이제 백그라운드에서 실행 시켜봄
 
+```
 docker run [옵션] [docker image repository name]
+```
 
-이건 예시
+**이건 예시**
 
 8080:9999 는 docker 가 백그라운드에서 실행시킬 때 포트를 정해주는 것. [원하는 포트] : [docker 에서 띄운 포트] 
 
+```
 docker run -d -p 8080:9999 docker-test
+```
 
-예시 결과
 
-실행된 백그라운드 접속하기
+
+**예시 결과**
+![3](https://user-images.githubusercontent.com/45488643/136145035-79f6058c-0ee0-4d19-8e05-3003a51ee4b8.png)
+
+## 실행된 백그라운드 접속하기
 
 terminal 에서 해야함
 
+```
 docker exec -it [containerID] bash 
+```
+
+![4](https://user-images.githubusercontent.com/45488643/136145049-805dcbf0-ec7f-46f7-83ab-83bdae8e426a.png)
 
 그럼 변경된 걸 확인할 수 있음
+
+
