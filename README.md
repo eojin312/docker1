@@ -125,8 +125,7 @@ terminal 에서 해야함
 docker exec -it [containerID] bash 
 ```
 
-
-
 그럼 변경된 걸 확인할 수 있음
 
+![5](https://user-images.githubusercontent.com/45488643/136146070-eaba9a96-8792-4201-ad61-89be3fae38f2.png)
 
