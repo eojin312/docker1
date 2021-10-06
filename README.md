@@ -22,27 +22,29 @@ container
 
 terminal 에 docker 다운
 
+```
 sudo wget -qO- https://get.docker.com/ | sh
+```
 
 정상적으로 다운됐다면 저 명령어를 통해 잘 실행되는 지 확인
 
+```
 docker --version
+```
 
-docker 회원가입 (필수)
+**docker 회원가입 (필수)**
 
-GUI 에서도 로그인
-
-이건 쉬움
+GUI 에서도 로그인(이건 쉬움)
 
 terminal 에서도 로그인
+- 이건 밑에서 설명
 
- 이건 밑에서 설명
-
+```
 docker login
-
+```
 로그인 되면, Login Success 라고 뜸
 
-Docker image 생성
+## Docker image 생성
 
 docker image 에 적용할 프로젝트에 Dockerfile 파일을 생성해야함
 
@@ -59,15 +61,17 @@ WORKDIR /app
 ENTRYPOINT ["java", "-jar", "test.war"]
 ```
 
-Dockerfile 이 하는 역할
+## Dockerfile 이 하는 역할
 
-build 시, 알아서 차례대로 명령해주는 파일 (위 script 는 예시)
+- build 시, 알아서 차례대로 명령해주는 파일 (위 script 는 예시)
 
 Dockerfile 다 작성했으면 본격적으로 image 를 생성할 수 있음
 
 terminal 에서
 
+```
 docker build [프로젝트 경로]/Dockerfile
+```
 
 해주면 됨
 
